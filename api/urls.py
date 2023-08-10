@@ -1,8 +1,7 @@
 from django.urls import path
-from .views import save_musicians
 from django.views.decorators.csrf import csrf_exempt
+from .views import MoviesView
 
 urlpatterns = [
-    path("musicians",csrf_exempt(save_musicians.as_view()),name="musicians"),
-    
+    path("movies", csrf_exempt(MoviesView.as_view()), name="musicians"),
 ]
