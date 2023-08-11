@@ -9,7 +9,7 @@ const MovieCard = ({ data }) => {
             backgroundImage: `url(${data.image})`,
           }}
         />
-        <div className="mt-2 ml-2 text-gray-300 text-sm font-bold">
+        <div className="mt-2 ml-2  w-40   text-gray-300 break-words text-sm font-bold">
           {data.name}
         </div>
       </a>
