@@ -5,7 +5,7 @@ const MovieCard = ({ data }) => {
   return (
     <div className="flex relative flex-col mt-5 cursor-pointer">
       <div
-        className="absolute top-2 right-3 opacity-80"
+        className="absolute top-2 right-2 opacity-80"
         onClick={() => {
           navigator.clipboard
             .writeText(data.location)
@@ -25,12 +25,12 @@ const MovieCard = ({ data }) => {
       </div>
       <a>
         <div
-          className="w-40 h-48 bg-center bg-cover rounded-lg"
+          className="w-40 h-56 bg-center bg-cover rounded-lg"
           style={{
             backgroundImage: `url(${data.image})`,
           }}
         />
-        <div className="mt-2 ml-2  w-40   text-gray-300 break-words text-sm font-bold">
+        <div className="mt-1 h-10 flex justify-center items-center absolute bottom-0 bg-black bg-opacity-80 backdrop-blur-md w-full p-1 rounded-bl-lg rounded-br-lg   text-white text-center break-words text-xs font-bold">
           {data.name}
         </div>
       </a>

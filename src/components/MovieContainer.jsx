@@ -9,7 +9,7 @@ const MovieContainer = () => {
     {
       name: "halo",
       image: "https://i.ytimg.com/vi/DyvwxoRtfH0/maxresdefault.jpg",
-      location: "https://i.ytimg.com/vi/",
+      location: "http://192.168.1.9/myfiles/puss.mkv",
     },
     {
       name: "avengers",
